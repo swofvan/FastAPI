@@ -6,7 +6,7 @@ from sqlalchemy import DateTime
 
 from datetime import datetime
 
-from database import Base           # Base is the parent class for all your database models.
+from database import Base
 
 
 class User(Base):
