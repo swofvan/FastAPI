@@ -12,4 +12,3 @@ class Products(Base):
     category = Column(String(100))
     price = Column(Float)
     quantity = Column(Integer)
-
