@@ -1,10 +1,5 @@
 from fastapi import FastAPI, Header
 
-from database import engine
-
-from models import Base
-
-
 import os
 
 from fastapi import FastAPI, Form, File, UploadFile, Depends
@@ -135,10 +130,7 @@ def login(
 
 ):
 
-    user = get_user_by_email_login(
-        db,
-        email,
-    )
+    user = get_user_by_email_login(db,email,)
 
     if not user:
         return JSONResponse(
